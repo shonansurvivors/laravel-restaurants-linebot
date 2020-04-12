@@ -16,6 +16,7 @@ class Gurunavi
                 'query' => [
                     'keyid' => env('GURUNAVI_ACCESS_KEY'),
                     'freeword' => str_replace(' ', ',', $word),
+                    'deliverly' => 1, // deliveryが正しいが、ぐるなびAPIのパラメーター名はdeliverly
                 ],
                 'http_errors' => false,
             ]);
